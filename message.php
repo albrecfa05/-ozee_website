@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,27 @@
     <script src="https://kit.fontawesome.com/24583cc326.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<?php
+    if(!empty($_POST["send"])){
+        $firstname = $_POST["firstname"];
+        $lastname = $_POST["lastname"];
+        $email = $_POST["email"];
+        $mobile = $_POST["mobile"];
+        $toEmail = $_POST["ozeemusic.contact@gmail.com"];
+
+        $mailHeaders = "Name: " . $firstname .
+        "\r\n Lastname: " .$lastname . 
+        "\r\n Email: " .$email . 
+        "\r\n Mobile: " .$mobile . 
+        "\r\n Message: " .$message . "\r\n";
+
+        if(mail($toEmail, $firstname, $mailHeaders)){
+            $message = "Message has been sent!"
+        }
+    }
+?>
+
 <!--START Navigationsleiste-->
 
 <div class="top_black_gradient"></div>    
@@ -29,7 +49,7 @@
 <div class="hero_contact"> 
     <div class="contact">
             <form method="post" action="message.php">
-                <h1>Let's Connect</h1>
+            <h1>Let's Connect</h1>
                 <input type="text" id="firstname" placeholder="First Name" name="firstname" required>
                 <input type="text" id="lastname" placeholder="Last Name" name="lastname" required>
                 <input type="email" id="email" placeholder="E-Mail" name="email" required>

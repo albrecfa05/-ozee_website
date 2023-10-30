@@ -299,3 +299,215 @@ button:hover{
 }
 
 /*ICONS*/
+
+/*UNTERSEITEN*/
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 255)),url(background/hero_shot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.backgroundtest{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 255)),url(background/hero_shot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 80%;
+    height: 300vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 0px solid black;
+    overflow-x: hidden;
+    
+}
+
+.spotlight{
+    margin-top: 15vh;
+    border: 0px solid white;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spot_text{
+    width: 50%;
+    height: 70vh;
+    border: 1px dashed cyan;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.spot_text h2{
+    color: white;
+    font-size: 75px;
+}
+
+.spot_text p{
+    color: white;
+}
+
+.spot_text button{
+    color: white;
+}
+
+iframe{
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.spot_img{
+    width: 50%;
+    height: 70vh;
+    border: 1px dashed cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover_spot{
+    width: 75%;
+    aspect-ratio: 1/1;
+    
+
+}
+
+.firstpage{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px dashed cyan;
+}
+
+.scrolldown{
+    display: grid;
+    text-align: center;
+}
+
+.scrolldown i{
+    color: white;
+    font-size: 30px;
+}
+
+.hero_contact{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0, 0, 0, 255)),url(background/hero_shot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(red, green, blue, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.contact form h1{
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+
+}
+
+.contact form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+
+}
+
+.contact form input::placeholder{
+    color: #ddd;
+
+}
+
+.contact form #lastname,
+.contact form #mobile{
+    margin-left: 20px;
+}
+
+.contact form h4{
+    color: white;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+
+}
+
+.contact form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194, 194, 194, 0.713);
+    
+}
+
+.contact form #btn_contact{
+    border: none;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+
+}
+
+.contact form #btn_contact:hover{
+    opacity: 0.7;
+}
