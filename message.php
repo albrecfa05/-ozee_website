@@ -48,7 +48,7 @@
 </div>  
 <div class="hero_contact"> 
     <div class="contact">
-            <form method="post" action="message.php">
+            <form method="post" name="emailContact">
             <h1>Let's Connect</h1>
                 <input type="text" id="firstname" placeholder="First Name" name="firstname" required>
                 <input type="text" id="lastname" placeholder="Last Name" name="lastname" required>
